@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Bride';
+    src: url('Fontes/bride/Bride.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'highSociety';
+    src: url('Fontes/high-society/HighSociety.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+
+/*Estilo corpo*/
+body {
+    background-color: #ffcdcd;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4em;
+    background-color: #fff6f6;    
+}
+
+/*Estilo seção colunas*/
+.principal {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/*Estilo das colunas*/
+.coluna1, .coluna2, .coluna3, .coluna4, .coluna5 {
+    align-items: center;
+    margin: 1%;
+    /*Alinhamento das imagens*/
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+/*Imagens*/
+img {
+    width: 100%;
+    margin: 1.5%;
+    transition: 0.5s;
+}
+
+img:hover {
+    transform: scale(1.3);
+}
+
+/*Estilo h1*/
+h1 {
+    font-family: 'Bride', sans-serif;
+    text-align: center;
+    color: rgb(56, 23, 2);
+    font-size: 3em;
+}
+
+/*Estilo h2*/
+h2 {
+    font-family: 'highSociety', sans-serif;
+    text-align: center;
+    color: rgb(78, 32, 3);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*Estilo h3*/
+h3 {
+    font-family: 'highSociety', sans-serif;
+    color: rgb(78, 32, 3);
+    font-size: 1em;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/*Estilo link visitado*/
+a:link, a:visited {
+    color: rgb(231, 22, 85);
+}
+/*Estilo link com o mouse sobre*/
+a:hover {
+    color: rgb(255, 85, 136);
+    cursor:pointer;
+}
+
+/*Estilo do player de audio*/
+.audio {
+    width: 100%;
+    height: 30px;
+    background-color: #fff6f6;
+}
